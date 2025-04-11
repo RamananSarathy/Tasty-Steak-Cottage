@@ -13,8 +13,7 @@ const Header = () => {
 
   const menuItems = [
     { name: 'Home', path: '/' },
-    { name: 'Drinks', path: '/menu/drinks' },
-    { name: 'Food', path: '/menu/food' },
+    { name: 'Menu', path: '/menu/drinks' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -25,7 +24,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/15405470-7910-4d2b-87db-993e260b5cf3.png" 
+              src="/lovable-uploads/2bf04877-6789-472a-a1c2-d3c422452dae.png" 
               alt="Steak Cottage Logo" 
               className="w-12 h-12 rounded-full"
             />

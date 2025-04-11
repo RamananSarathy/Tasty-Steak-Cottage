@@ -28,7 +28,7 @@ const DessertMenu = () => {
       
       <div className="text-center">
         <img 
-          src="/lovable-uploads/15405470-7910-4d2b-87db-993e260b5cf3.png" 
+          src="/lovable-uploads/2bf04877-6789-472a-a1c2-d3c422452dae.png" 
           alt="Steak Cottage Logo" 
           className="w-20 h-20 mx-auto rounded-full"
         />
