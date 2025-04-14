@@ -1,0 +1,40 @@
+
+import React from 'react';
+import { appetizers } from '@/data/foodMenu';
+
+const AppetizerMenu = () => {
+  return (
+    <div className="menu-section">
+      <h1 className="menu-title">APPETIZERS</h1>
+      
+      <div className="bg-black/30 rounded-lg p-6 mb-8">
+        <div className="space-y-4">
+          {appetizers.map((item) => (
+            <div key={item.id} className="flex items-start py-4 border-b border-gray-700">
+              <div className="text-restaurant-gold font-medium text-lg w-16">{item.id}</div>
+              <div className="flex-grow pr-4">
+                <h4 className="font-medium text-white">{item.name}</h4>
+                {item.description && (
+                  <p className="text-sm text-gray-400 mt-1">{item.description}</p>
+                )}
+              </div>
+              <div className="text-right min-w-[80px] text-restaurant-gold font-medium">
+                RM {item.price.toFixed(2)}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="text-center">
+        <img 
+          src="/lovable-uploads/2bf04877-6789-472a-a1c2-d3c422452dae.png" 
+          alt="Steak Cottage Logo" 
+          className="w-20 h-20 mx-auto rounded-full"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default AppetizerMenu;
