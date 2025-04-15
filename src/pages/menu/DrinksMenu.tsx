@@ -11,18 +11,9 @@ const DrinksMenu = () => {
         <h2 className="text-3xl font-bold text-restaurant-gold mb-6 text-center">MALAYSIAN FAVORITE</h2>
         
         <div className="bg-black/30 rounded-lg p-6 mb-8">
-          <div className="grid grid-cols-2 gap-4 mb-4">
-            <div className="text-right">
-              <h3 className="text-xl font-medium text-white">HOT</h3>
-            </div>
-            <div className="text-left">
-              <h3 className="text-xl font-medium text-white">COLD</h3>
-            </div>
-          </div>
-          
           <div className="space-y-4">
             {malaysianDrinks.map((item) => (
-              <div key={item.id} className="flex items-start py-4 border-b border-gray-700">
+              <div key={item.id} className="flex items-center py-4 border-b border-gray-700">
                 <div className="text-restaurant-gold font-medium text-lg w-16">{item.id}</div>
                 <div className="flex-grow pr-4">
                   <h4 className="font-medium text-white">{item.name}</h4>
@@ -30,11 +21,23 @@ const DrinksMenu = () => {
                     <p className="text-sm text-gray-400 mt-1">{item.description}</p>
                   )}
                 </div>
-                <div className="text-right min-w-[80px] text-restaurant-gold font-medium">
-                  {item.hotPrice && `RM ${item.hotPrice.toFixed(2)}`}
-                </div>
-                <div className="text-right min-w-[80px] text-restaurant-gold font-medium">
-                  {item.coldPrice && `RM ${item.coldPrice.toFixed(2)}`}
+                <div className="flex items-center space-x-4">
+                  <div className="text-right min-w-[80px] text-restaurant-gold font-medium">
+                    {item.hotPrice && (
+                      <div className="flex items-center">
+                        <span className="mr-2 text-sm text-white">HOT</span>
+                        RM {item.hotPrice.toFixed(2)}
+                      </div>
+                    )}
+                  </div>
+                  <div className="text-right min-w-[80px] text-restaurant-gold font-medium">
+                    {item.coldPrice && (
+                      <div className="flex items-center">
+                        <span className="mr-2 text-sm text-white">COLD</span>
+                        RM {item.coldPrice.toFixed(2)}
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
