@@ -1,15 +1,15 @@
 
 import React from 'react';
-import { appetizers } from '@/data/foodMenu';
+import { lightBites } from '@/data/foodMenu';
 
 const AppetizerMenu = () => {
   return (
     <div className="menu-section">
-      <h1 className="menu-title">APPETIZERS</h1>
+      <h1 className="menu-title">LIGHT BITES</h1>
       
       <div className="bg-black/30 rounded-lg p-6 mb-8">
         <div className="space-y-4">
-          {appetizers.map((item) => (
+          {lightBites.map((item) => (
             <div key={item.id} className="flex items-start py-4 border-b border-gray-700">
               <div className="text-restaurant-gold font-medium text-lg w-16">{item.id}</div>
               <div className="flex-grow pr-4">
