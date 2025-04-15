@@ -9,10 +9,10 @@ const MenuLayout: React.FC = () => {
   const location = useLocation();
   
   const menuCategories = [
-    { name: 'Drinks', path: '/menu/drinks' },
-    { name: 'Appetizers', path: '/menu/appetizers' },
     { name: 'Main Course', path: '/menu/main-course' },
+    { name: 'Appetizers', path: '/menu/appetizers' },
     { name: 'Desserts', path: '/menu/desserts' },
+    { name: 'Drinks', path: '/menu/drinks' },
   ];
   
   return (
