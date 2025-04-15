@@ -35,7 +35,10 @@ const Contact = () => {
                 <div className="space-y-4">
                   <div>
                     <h3 className="text-xl font-semibold text-white">Address</h3>
-                    <p className="text-gray-300">123 Food Street, Kuala Lumpur, Malaysia</p>
+                    <p className="text-gray-300">Pusat Pembangunan Usahawan,</p>
+                    <p className="text-gray-300">Jabatan Perkhidmatan Veterinar,</p>
+                    <p className="text-gray-300">Jalan Tuanku Antah, Off Jalan Rahang,</p>
+                    <p className="text-gray-300">70100 Seremban, Negeri Sembilan</p>
                   </div>
                   
                   <div>
@@ -110,7 +113,7 @@ const Contact = () => {
             
             <div className="rounded-lg overflow-hidden h-[400px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127482.6381831912!2d101.5494221558983!3d3.1390882966241983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49c701efeae7%3A0xf4d98e5b2f1c287d!2sKuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur%2C%20Malaysia!5e0!3m2!1sen!2sus!4v1650670590167!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.5359453634686!2d101.93294437495814!3d2.6815359970803147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cde25cd8cad985%3A0xa1bef438307bba97!2sCottage%20Steak%20Cafe%20%26%20Grill!5e0!3m2!1sen!2smy!4v1712476875591!5m2!1sen!2smy"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

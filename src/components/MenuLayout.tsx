@@ -1,12 +1,13 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 const MenuLayout: React.FC = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   
   const menuCategories = [
     { name: 'Main Course', path: '/menu/main-course' },
@@ -14,6 +15,13 @@ const MenuLayout: React.FC = () => {
     { name: 'Desserts', path: '/menu/desserts' },
     { name: 'Drinks', path: '/menu/drinks' },
   ];
+  
+  useEffect(() => {
+    // If user lands directly on /menu, redirect to main-course
+    if (location.pathname === '/menu') {
+      navigate('/menu/main-course', { replace: true });
+    }
+  }, [location.pathname, navigate]);
   
   return (
     <div className="flex flex-col min-h-screen">

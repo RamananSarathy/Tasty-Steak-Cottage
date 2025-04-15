@@ -24,7 +24,10 @@ const Footer = () => {
           
           <div>
             <h3 className="text-xl font-semibold text-restaurant-gold mb-4">Contact</h3>
-            <p className="mb-2">123 Food Street, Kuala Lumpur</p>
+            <p className="mb-2">Pusat Pembangunan Usahawan,</p>
+            <p className="mb-2">Jabatan Perkhidmatan Veterinar,</p>
+            <p className="mb-2">Jalan Tuanku Antah, Off Jalan Rahang,</p>
+            <p className="mb-2">70100 Seremban, Negeri Sembilan</p>
             <p className="mb-2">Phone: +60 12-345 6789</p>
             <p className="mb-2">Email: info@cottagesteak.com</p>
           </div>
