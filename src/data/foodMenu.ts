@@ -1,4 +1,3 @@
-
 export interface FoodItem {
   id: string;
   name: string;
@@ -418,36 +417,23 @@ export const specialtyDishes: FoodItem[] = [
   }
 ];
 
-// Nasi Lemak varieties - Moved to match image positions
+// Nasi Lemak varieties - Updated with "Grilled Chicken Madaria"
 export const nasiLemak: FoodItem[] = [
   {
     id: "43",
-    name: "NASI LEMAK",
-    description: "Coconut rice served with traditional sides",
+    name: "GRILLED CHICKEN MADARIA",
+    description: "Delicious grilled chicken with Madaria sauce",
     price: 28.00,
-    category: "Nasi Lemak",
-    subcategories: [
-      { id: "43.1", name: "NASI LEMAK AYAM PANDAN", price: 28.00 },
-      { id: "43.2", name: "NASI LEMAK CHICKEN GRILLED", price: 20.00 },
-      { id: "43.3", name: "NASI LEMAK LAMB GRILLED", price: 33.00 }
-    ]
+    category: "Nasi Lemak"
   }
 ];
 
-// New Nasi Briyani Lamb Shank items - Added as per request
+// New Nasi Briyani Lamb Shank items - Removed duplicate entry
 export const nasiBriyaniSpecial: FoodItem[] = [
   {
     id: "44",
     name: "NASI BRIYANI LAMB SHANK",
     description: "Special briyani rice served with tender lamb shank",
-    price: 38.00,
-    category: "Specialty Rice",
-    isSpecial: true
-  },
-  {
-    id: "45",
-    name: "NASI BRIYANI LAMB SHANK",
-    description: "Special briyani rice served with tender lamb shank - another variety",
     price: 38.00,
     category: "Specialty Rice",
     isSpecial: true

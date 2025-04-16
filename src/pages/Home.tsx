@@ -26,7 +26,7 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
-                to="/menu/drinks"
+                to="/menu/main-course"
                 className="bg-restaurant-gold text-black px-6 py-3 rounded-lg font-medium hover:bg-yellow-500 transition-colors"
               >
                 View Our Menu
@@ -49,7 +49,7 @@ const Home = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Featured Item 1 */}
               <div className="bg-black/40 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-[url('https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=1972')] bg-cover bg-center"></div>
+                <div className="h-48 bg-[url('https://images.unsplash.com/photo-1432139555190-58524dae6a55?q=80&w=2070')] bg-cover bg-center"></div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-restaurant-gold">Premium T-Bone Steak</h3>
                   <p className="text-gray-300 mb-4">Perfectly grilled premium T-bone steak served with two sides of your choice.</p>
@@ -59,7 +59,7 @@ const Home = () => {
               
               {/* Featured Item 2 */}
               <div className="bg-black/40 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-[url('https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b?q=80&w=2070')] bg-cover bg-center"></div>
+                <div className="h-48 bg-[url('/lovable-uploads/290c5b9d-cca8-472f-ac62-5c18571af018.png')] bg-cover bg-center"></div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-restaurant-gold">Teh Tarik</h3>
                   <p className="text-gray-300 mb-4">Classic Malaysian pulled milk tea, a perfect companion to any meal.</p>
@@ -69,11 +69,11 @@ const Home = () => {
               
               {/* Featured Item 3 */}
               <div className="bg-black/40 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-[url('https://images.unsplash.com/photo-1505253758473-96b7015fcd40?q=80&w=2000')] bg-cover bg-center"></div>
+                <div className="h-48 bg-[url('https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1965')] bg-cover bg-center"></div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-restaurant-gold">Nasi Lemak</h3>
-                  <p className="text-gray-300 mb-4">Malaysia's national dish - coconut rice served with sambal, anchovies, and more.</p>
-                  <p className="text-restaurant-gold font-semibold text-lg">RM 15.00</p>
+                  <h3 className="text-xl font-semibold mb-2 text-restaurant-gold">GO GO Burger</h3>
+                  <p className="text-gray-300 mb-4">Delicious burger with your choice of chicken or beef patty and fresh toppings.</p>
+                  <p className="text-restaurant-gold font-semibold text-lg">RM 9.00</p>
                 </div>
               </div>
             </div>
@@ -121,7 +121,7 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
-                to="/menu/drinks"
+                to="/menu/main-course"
                 className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"
               >
                 View Menu
