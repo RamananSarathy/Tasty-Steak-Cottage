@@ -335,7 +335,7 @@ export const burgers: FoodItem[] = [
   }
 ];
 
-// Specialty dishes - Shifted "Creamy Alio Seafood" from 31 to 32
+// Specialty dishes - Including Grilled Chicken Madaria (moved from Nasi Lemak)
 export const specialtyDishes: FoodItem[] = [
   {
     id: "32",
@@ -414,24 +414,36 @@ export const specialtyDishes: FoodItem[] = [
     description: "Mixed greens with smoked duck breast and house dressing",
     price: 28.00,
     category: "Specialty Dishes"
-  }
-];
-
-// Nasi Lemak varieties - Updated with "Grilled Chicken Madaria"
-export const nasiLemak: FoodItem[] = [
+  },
   {
     id: "43",
     name: "GRILLED CHICKEN MADARIA",
     description: "Delicious grilled chicken with Madaria sauce",
     price: 28.00,
-    category: "Nasi Lemak"
+    category: "Specialty Dishes"
   }
 ];
 
-// New Nasi Briyani Lamb Shank items - Removed duplicate entry
-export const nasiBriyaniSpecial: FoodItem[] = [
+// Nasi Lemak varieties with subcategories
+export const nasiLemak: FoodItem[] = [
   {
     id: "44",
+    name: "NASI LEMAK",
+    description: "Malaysia's iconic coconut rice dish with various accompaniments",
+    price: 28.00,
+    category: "Nasi Lemak",
+    subcategories: [
+      { id: "44.1", name: "NASI LEMAK AYAM PANDAN", price: 28.00 },
+      { id: "44.2", name: "NASI LEMAK CHICKEN GRILLED", price: 20.00 },
+      { id: "44.3", name: "NASI LEMAK LAMB GRILLED", price: 33.00 }
+    ]
+  }
+];
+
+// Specialty Rice item - Renumbered to 45
+export const nasiBriyaniSpecial: FoodItem[] = [
+  {
+    id: "45",
     name: "NASI BRIYANI LAMB SHANK",
     description: "Special briyani rice served with tender lamb shank",
     price: 38.00,
@@ -462,6 +474,7 @@ export const mainCourse: FoodItem[] = [
   ...nasiBriyaniSpecial
 ];
 
+// Desserts
 export const desserts: FoodItem[] = [
   {
     id: "D001",

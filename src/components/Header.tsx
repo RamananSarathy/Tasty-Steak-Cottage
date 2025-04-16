@@ -13,7 +13,7 @@ const Header = () => {
 
   const menuItems = [
     { name: 'Home', path: '/' },
-    { name: 'Menu', path: '/menu/drinks' },
+    { name: 'Menu', path: '/menu/main-course' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -73,7 +73,9 @@ const Header = () => {
                 to={item.path}
                 className={cn(
                   "text-lg font-medium transition-colors hover:text-restaurant-gold",
-                  location.pathname === item.path ? "text-restaurant-gold" : "text-white"
+                  location.pathname === item.path || 
+                  (item.path.includes('/menu') && location.pathname.includes('/menu')) 
+                    ? "text-restaurant-gold" : "text-white"
                 )}
               >
                 {item.name}
@@ -92,7 +94,9 @@ const Header = () => {
                     to={item.path}
                     className={cn(
                       "block text-lg font-medium transition-colors hover:text-restaurant-gold",
-                      location.pathname === item.path ? "text-restaurant-gold" : "text-white"
+                      location.pathname === item.path || 
+                      (item.path.includes('/menu') && location.pathname.includes('/menu')) 
+                        ? "text-restaurant-gold" : "text-white"
                     )}
                     onClick={() => setIsMenuOpen(false)}
                   >
