@@ -1,6 +1,10 @@
 
 import React from 'react';
-import { beefDishes, lambDishes, chickenDishes, seafoodDishes, nasiLemak, briyani, specialtyDishes, pastaDishes, localFavorites, soupDishes, meatballDishes, burgers } from '@/data/foodMenu';
+import { 
+  beefDishes, lambDishes, chickenDishes, seafoodDishes, pastaDishes, 
+  localFavorites, soupDishes, briyani, meatballDishes, burgers,
+  specialtyDishes, nasiLemak, lightBites, nasiBriyaniSpecial
+} from '@/data/foodMenu';
 
 const MainCourseMenu = () => {
   // Combine all main course items
@@ -14,9 +18,11 @@ const MainCourseMenu = () => {
     ...soupDishes,
     ...briyani,
     ...meatballDishes,
+    ...lightBites,
     ...burgers,
     ...specialtyDishes,
-    ...nasiLemak
+    ...nasiLemak,
+    ...nasiBriyaniSpecial
   ];
   
   // Group dishes by category
@@ -30,9 +36,11 @@ const MainCourseMenu = () => {
     "Soup": soupDishes,
     "Briyani": briyani,
     "Meatballs": meatballDishes,
+    "Light Bites": lightBites,
     "Burgers": burgers,
     "Specialty Dishes": specialtyDishes,
-    "Nasi Lemak": nasiLemak
+    "Nasi Lemak": nasiLemak,
+    "Specialty Rice": nasiBriyaniSpecial
   };
 
   return (
@@ -45,38 +53,59 @@ const MainCourseMenu = () => {
             <h2 className="text-2xl font-bold text-restaurant-gold mb-6 text-center">{category.toUpperCase()}</h2>
             
             <div className="bg-black/30 rounded-lg p-6 mb-8">
+              <div className="space-y-4">
+                {items.map((item) => (
+                  <div 
+                    key={item.id} 
+                    className={`flex flex-col py-4 border-b border-gray-700 ${item.isSpecial ? 'bg-restaurant-gold/10 rounded p-2' : ''}`}
+                  >
+                    <div className="flex items-start">
+                      <div className="text-restaurant-gold font-medium text-lg w-16">{item.id}</div>
+                      <div className="flex-grow pr-4">
+                        <h4 className="font-medium text-white flex items-center">
+                          {item.name}
+                          {item.isSpecial && (
+                            <span className="ml-2 text-xs bg-restaurant-gold text-black px-2 py-1 rounded">Special</span>
+                          )}
+                        </h4>
+                        {item.description && (
+                          <p className="text-sm text-gray-400 mt-1">{item.description}</p>
+                        )}
+                      </div>
+                      
+                      {!item.subcategories && (
+                        <div className="text-right min-w-[80px] text-restaurant-gold font-medium whitespace-nowrap">
+                          RM {item.price.toFixed(2)}
+                        </div>
+                      )}
+                    </div>
+                    
+                    {item.subcategories && (
+                      <div className="ml-16 mt-3 space-y-2">
+                        {item.subcategories.map((subItem) => (
+                          <div key={subItem.id} className="flex justify-between items-center">
+                            <div className="flex items-center">
+                              <span className="text-restaurant-gold mr-2">{subItem.id}</span>
+                              <span className="text-white">{subItem.name}</span>
+                            </div>
+                            <div className="text-restaurant-gold font-medium">
+                              RM {subItem.price.toFixed(2)}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+              
               {category === "Briyani" && (
-                <div className="text-center mb-6">
+                <div className="text-center mt-6">
                   <p className="text-xl font-bold text-restaurant-gold px-4 py-2 border-2 border-restaurant-gold inline-block rounded-md animate-pulse">
                     FREE TEH O AIS
                   </p>
                 </div>
               )}
-              
-              <div className="space-y-4">
-                {items.map((item) => (
-                  <div 
-                    key={item.id} 
-                    className={`flex items-start py-4 border-b border-gray-700 ${item.isSpecial ? 'bg-restaurant-gold/10 rounded p-2' : ''}`}
-                  >
-                    <div className="text-restaurant-gold font-medium text-lg w-16">{item.id}</div>
-                    <div className="flex-grow pr-4">
-                      <h4 className="font-medium text-white flex items-center">
-                        {item.name}
-                        {item.isSpecial && (
-                          <span className="ml-2 text-xs bg-restaurant-gold text-black px-2 py-1 rounded">Special</span>
-                        )}
-                      </h4>
-                      {item.description && (
-                        <p className="text-sm text-gray-400 mt-1">{item.description}</p>
-                      )}
-                    </div>
-                    <div className="text-right min-w-[80px] text-restaurant-gold font-medium whitespace-nowrap">
-                      RM {item.price.toFixed(2)}
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         )
