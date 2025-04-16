@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { beefDishes, lambDishes, chickenDishes, seafoodDishes, nasiLemak, briyani, specialtyDishes } from '@/data/foodMenu';
+import { beefDishes, lambDishes, chickenDishes, seafoodDishes, nasiLemak, briyani, specialtyDishes, pastaDishes, localFavorites, soupDishes, meatballDishes, burgers } from '@/data/foodMenu';
 
 const MainCourseMenu = () => {
   // Combine all main course items
@@ -9,9 +9,14 @@ const MainCourseMenu = () => {
     ...lambDishes, 
     ...chickenDishes,
     ...seafoodDishes,
-    ...nasiLemak,
+    ...pastaDishes,
+    ...localFavorites,
+    ...soupDishes,
     ...briyani,
-    ...specialtyDishes
+    ...meatballDishes,
+    ...burgers,
+    ...specialtyDishes,
+    ...nasiLemak
   ];
   
   // Group dishes by category
@@ -20,9 +25,14 @@ const MainCourseMenu = () => {
     "Lamb": lambDishes,
     "Chicken": chickenDishes,
     "Seafood": seafoodDishes,
-    "Nasi Lemak": nasiLemak,
+    "Pasta": pastaDishes,
+    "Local Delights": localFavorites,
+    "Soup": soupDishes,
     "Briyani": briyani,
-    "Specialty Dishes": specialtyDishes
+    "Meatballs": meatballDishes,
+    "Burgers": burgers,
+    "Specialty Dishes": specialtyDishes,
+    "Nasi Lemak": nasiLemak
   };
 
   return (
@@ -35,6 +45,14 @@ const MainCourseMenu = () => {
             <h2 className="text-2xl font-bold text-restaurant-gold mb-6 text-center">{category.toUpperCase()}</h2>
             
             <div className="bg-black/30 rounded-lg p-6 mb-8">
+              {category === "Briyani" && (
+                <div className="text-center mb-6">
+                  <p className="text-xl font-bold text-restaurant-gold px-4 py-2 border-2 border-restaurant-gold inline-block rounded-md animate-pulse">
+                    FREE TEH O AIS
+                  </p>
+                </div>
+              )}
+              
               <div className="space-y-4">
                 {items.map((item) => (
                   <div 

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { malaysianDrinks, otherDrinks, fruitJuices, detoxSignature } from '@/data/drinksMenu';
 
@@ -25,16 +26,16 @@ const DrinksMenu = () => {
                   <div className="text-right min-w-[80px] text-restaurant-gold font-medium">
                     {item.hotPrice && (
                       <div className="flex items-center">
-                        <span className="mr-2 text-sm text-white">HOT</span>
-                        RM {item.hotPrice.toFixed(2)}
+                        <span className="text-restaurant-gold font-medium">RM {item.hotPrice.toFixed(2)}</span>
+                        <span className="ml-2 text-sm text-white">HOT</span>
                       </div>
                     )}
                   </div>
                   <div className="text-right min-w-[80px] text-restaurant-gold font-medium">
                     {item.coldPrice && (
                       <div className="flex items-center">
-                        <span className="mr-2 text-sm text-white">COLD</span>
-                        RM {item.coldPrice.toFixed(2)}
+                        <span className="text-restaurant-gold font-medium">RM {item.coldPrice.toFixed(2)}</span>
+                        <span className="ml-2 text-sm text-white">COLD</span>
                       </div>
                     )}
                   </div>

@@ -90,7 +90,7 @@ export const seafoodDishes: FoodItem[] = [
   }
 ];
 
-// Pasta dishes
+// Pasta dishes - Reorganized to be 10-13
 export const pastaDishes: FoodItem[] = [
   {
     id: "10",
@@ -122,7 +122,7 @@ export const pastaDishes: FoodItem[] = [
   }
 ];
 
-// Local favorites
+// Local favorites - Renumbered to start at 14
 export const localFavorites: FoodItem[] = [
   {
     id: "14",
@@ -137,64 +137,72 @@ export const localFavorites: FoodItem[] = [
     description: "Clear broth noodle soup with choice of protein (Beef, Chicken, Lamb, or Beef Shank)",
     price: 10.00,
     category: "Local Favorites"
-  },
+  }
+];
+
+// Soup items - Numbered as 16 and 17
+export const soupDishes: FoodItem[] = [
   {
     id: "16",
     name: "MUSHROOM SOUP WITH GARLIC BREAD",
     description: "Creamy mushroom soup served with toasted garlic bread",
     price: 12.00,
-    category: "Local Favorites"
+    category: "Soup"
   },
   {
     id: "17",
     name: "PUMPKIN SOUP WITH GARLIC BREAD",
     description: "Rich and creamy pumpkin soup served with toasted garlic bread",
     price: 17.00,
-    category: "Local Favorites",
+    category: "Soup",
     isSpecial: true
-  },
+  }
+];
+
+// Briyani Rice - Numbered 18-20
+export const briyani: FoodItem[] = [
   {
     id: "18",
     name: "BRIYANI RICE WITH GRILLED LAMB CHOP",
     description: "Fragrant briyani rice served with grilled lamb chop, salad and papadum",
     price: 33.00,
-    category: "Local Favorites"
+    category: "Briyani"
   },
   {
     id: "19",
     name: "BRIYANI RICE WITH BEEF SKEWERS",
     description: "Fragrant briyani rice served with beef skewers, salad and papadum",
     price: 18.00,
-    category: "Local Favorites"
+    category: "Briyani"
   },
   {
     id: "20",
     name: "BRIYANI RICE WITH GRILLED CHICKEN",
     description: "Fragrant briyani rice served with grilled chicken, salad and papadum",
     price: 19.00,
-    category: "Local Favorites"
+    category: "Briyani"
   }
 ];
 
-// Meatballs and other dishes
-export const otherDishes: FoodItem[] = [
+// Meatballs - Numbered as 21 and 22
+export const meatballDishes: FoodItem[] = [
   {
     id: "21",
     name: "MEATBALLS",
     description: "Choice of chicken or beef meatballs in rich gravy",
     price: 10.00,
-    category: "Other Dishes"
+    category: "Meatballs"
   },
   {
     id: "22",
     name: "MEATBALLS WITH FRIES",
     description: "Choice of chicken or beef meatballs served with golden fries",
     price: 14.00,
-    category: "Other Dishes"
+    category: "Meatballs"
   }
 ];
 
-// Light bites
+// Light bites - Numbered 23-28
 export const lightBites: FoodItem[] = [
   {
     id: "23",
@@ -240,7 +248,7 @@ export const lightBites: FoodItem[] = [
   }
 ];
 
-// Burgers
+// Burgers - Numbered 29-31
 export const burgers: FoodItem[] = [
   {
     id: "29",
@@ -266,17 +274,17 @@ export const burgers: FoodItem[] = [
   }
 ];
 
-// Specialty dishes
+// Specialty dishes - Starting from 32 (Shifted "Creamy Alio Seafood" from 31 to 32)
 export const specialtyDishes: FoodItem[] = [
   {
-    id: "31",
+    id: "32",
     name: "CREAMY ALIO SEAFOOD",
     description: "Seafood medley in a rich, creamy garlic sauce",
     price: 28.00,
     category: "Specialty Dishes"
   },
   {
-    id: "32",
+    id: "33",
     name: "BEEF SHENITZEL",
     description: "Thinly pounded beef, breaded and fried to golden perfection",
     price: 48.00,
@@ -284,70 +292,70 @@ export const specialtyDishes: FoodItem[] = [
     isSpecial: true
   },
   {
-    id: "33",
+    id: "34",
     name: "SMOKE DUCK GRILLED WITH MASHED POTATOES",
     description: "Smoked duck breast, grilled and served with creamy mashed potatoes",
     price: 22.00,
     category: "Specialty Dishes"
   },
   {
-    id: "34",
+    id: "35",
     name: "SOBA MEDITERRANEAN WITH SALMON",
     description: "Buckwheat noodles with Mediterranean herbs and grilled salmon",
     price: 38.00,
     category: "Specialty Dishes"
   },
   {
-    id: "35",
+    id: "36",
     name: "SPAGHETTI ARABIATA CHICKEN FILLET",
     description: "Spicy tomato pasta sauce with grilled chicken fillet",
     price: 19.00,
     category: "Specialty Dishes"
   },
   {
-    id: "36",
+    id: "37",
     name: "SOBA MEATBALLS",
     description: "Buckwheat noodles topped with savory meatballs in rich sauce",
     price: 22.00,
     category: "Specialty Dishes"
   },
   {
-    id: "37",
+    id: "38",
     name: "FRESH PITAGALO SALAD",
     description: "Fresh mixed greens with signature Pitagalo dressing",
     price: 22.00,
     category: "Specialty Dishes"
   },
   {
-    id: "38",
+    id: "39",
     name: "SEAFOOD PIZZA",
     description: "Wood-fired pizza topped with fresh seafood and herbs",
     price: 30.00,
     category: "Specialty Dishes"
   },
   {
-    id: "39",
+    id: "40",
     name: "PIDA PIZZA",
     description: "Traditional Turkish style flatbread pizza with toppings",
     price: 25.00,
     category: "Specialty Dishes"
   },
   {
-    id: "40",
+    id: "41",
     name: "FITURAGAMBAS",
     description: "Fresh prawns with special herb sauce and vegetables",
     price: 14.00,
     category: "Specialty Dishes"
   },
   {
-    id: "41",
+    id: "42",
     name: "SMOKED DUCK SALAD",
     description: "Mixed greens with smoked duck breast and house dressing",
     price: 28.00,
     category: "Specialty Dishes"
   },
   {
-    id: "42",
+    id: "43",
     name: "GRILLED CHICKEN MADARIA",
     description: "Grilled chicken with special Madaria sauce and herbs",
     price: 28.00,
@@ -355,40 +363,28 @@ export const specialtyDishes: FoodItem[] = [
   }
 ];
 
-// Nasi Lemak varieties
+// Nasi Lemak varieties - Moved to end of menu
 export const nasiLemak: FoodItem[] = [
   {
-    id: "43.1",
+    id: "44",
     name: "NASI LEMAK AYAM PANDAN",
     description: "Coconut rice with pandan-infused chicken, served with traditional sides",
     price: 28.00,
     category: "Nasi Lemak"
   },
   {
-    id: "43.2",
+    id: "45",
     name: "NASI LEMAK CHICKEN GRILLED",
     description: "Coconut rice with grilled chicken, served with traditional sides",
     price: 20.00,
     category: "Nasi Lemak"
   },
   {
-    id: "43.3",
+    id: "46",
     name: "NASI LEMAK LAMB GRILLED",
     description: "Coconut rice with grilled lamb, served with traditional sides",
     price: 33.00,
     category: "Nasi Lemak",
-    isSpecial: true
-  }
-];
-
-// Briyani varieties
-export const briyani: FoodItem[] = [
-  {
-    id: "44",
-    name: "NASI BRIYANI LAMB SHANK",
-    description: "Fragrant briyani rice with tender lamb shank and traditional accompaniments",
-    price: 38.00,
-    category: "Briyani",
     isSpecial: true
   }
 ];
@@ -402,9 +398,15 @@ export const mainCourse: FoodItem[] = [
   ...beefDishes,
   ...lambDishes,
   ...chickenDishes,
-  ...seafoodDishes.slice(0, 2),
-  ...nasiLemak,
-  ...briyani
+  ...seafoodDishes,
+  ...pastaDishes,
+  ...localFavorites,
+  ...soupDishes,
+  ...briyani,
+  ...meatballDishes,
+  ...burgers,
+  ...specialtyDishes,
+  ...nasiLemak
 ];
 
 export const desserts: FoodItem[] = [
@@ -437,4 +439,3 @@ export const desserts: FoodItem[] = [
     category: "Desserts"
   }
 ];
-
