@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
@@ -58,7 +59,7 @@ const Home = () => {
               
               {/* Featured Item 2 */}
               <div className="bg-black/40 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-[url('https://images.unsplash.com/photo/_5X6RIlUFbM?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center"></div>
+                <div className="h-48 bg-[url('/lovable-uploads/5a02bd4a-a1db-41d3-8cb4-df838a6e4a56.png')] bg-cover bg-center"></div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-restaurant-gold">Teh Tarik</h3>
                   <p className="text-gray-300 mb-4">Classic Malaysian pulled milk tea, a perfect companion to any meal.</p>
