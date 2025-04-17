@@ -59,7 +59,7 @@ const Home = () => {
               
               {/* Featured Item 2 */}
               <div className="bg-black/40 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-[url('/lovable-uploads/fae6d860-fe6d-4919-8faa-5b8054aeb3ef.png')] bg-cover bg-center"></div>
+                <div className="h-48 bg-[url('https://images.unsplash.com/photo-1582562124811-c09040d0a901?q=80&w=1965')] bg-cover bg-center"></div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-restaurant-gold">Teh Tarik</h3>
                   <p className="text-gray-300 mb-4">Classic Malaysian pulled milk tea, a perfect companion to any meal.</p>
